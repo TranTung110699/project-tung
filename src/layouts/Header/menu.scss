@@ -1,0 +1,71 @@
+.menu-small{
+  background-color: white;
+  margin-top: 25px;
+  display: flex;
+  .menu-small-cover{
+    width: 250px;
+    background-color: lightcyan;
+    .ant-menu-item{
+      border-bottom: 1px solid darkgray;
+      margin-top: -3px;
+      margin-bottom: 0px;
+    }
+    .ant-menu-item-active{
+      background-color: darkcyan;
+      border-right: 3px solid aqua;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .ant-menu-item-selected{
+      border-right: 3px solid aqua;
+      background-color: darkcyan;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .ant-menu-submenu{
+      border-bottom: 1px solid darkgray;
+      margin-top: -3px;
+      margin-bottom: 0px;
+    }
+    .ant-menu-submenu-active{
+      background-color: darkcyan;
+      border-right: 3px solid aqua;
+      .ant-menu-submenu-title{
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .ant-menu-submenu-selected{
+      border-right: 3px solid aqua;
+      background-color: darkcyan;
+      .ant-menu-submenu-title{
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.sub-menu-item{
+  width: 250px;
+  border-bottom: 1px solid lightgray;
+  background-color: lightcyan;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  a{
+    text-decoration: none !important;
+  }
+}
+.sub-menu-item:hover{
+  background-color: lightskyblue;
+  a{
+    color: white;
+  }
+}
+.logo-brand{
+  height: 40px;
+  width: 60px;
+}

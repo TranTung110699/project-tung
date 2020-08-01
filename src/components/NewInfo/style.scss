@@ -1,0 +1,42 @@
+.ant-carousel{
+  height: 100%;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  margin-top: 0px;
+  height: 630px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+//.slick-track{
+//  transition: 1000ms !important;
+//}
+
+.ant-carousel .slick-slide h3 {
+  color: white;
+}
+
+.car-advertisement{
+  height: 630px;
+  width: 300px;
+}
+
+.ant-pagination-item{
+  border-radius: 50%;
+}
+
+.ant-pagination-item-selected{
+  background-color: lightskyblue;
+  a{
+    color: black !important;
+  }
+}
+
+.ant-pagination-item-active{
+  background-color: lightskyblue;
+  a{
+    color: black !important;
+  }
+}

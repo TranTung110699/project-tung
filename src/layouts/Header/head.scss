@@ -1,0 +1,49 @@
+.head{
+  background-color: white;
+  .logo {
+    width: 80px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 28px 10px 0;
+    float: left;
+    border-right: 2px solid darkcyan;
+    .logo-img{
+      width: 48px;
+      height: 48px;
+      margin-top: -20px;
+    }
+  }
+  .menu-header{
+    background-color: white;
+    .ant-menu-horizontal{
+      color: darkcyan ;
+      border-bottom: 2px solid darkcyan ;
+      text-decoration: none  ;
+      a{
+        color:darkcyan;
+        text-decoration: none;
+      }
+    }
+    .ant-menu-item-selected{
+      color: darkcyan ;
+      border-bottom: 2px solid darkcyan ;
+      text-decoration: none ;
+      a{
+        color:darkcyan;
+        text-decoration: none;
+      }
+    }
+    .ant-menu-item-active{
+      color: darkcyan ;
+      border-bottom: 2px solid darkcyan ;
+      text-decoration: none ;
+      a{
+        color:darkcyan;
+        text-decoration: none;
+      }
+    }
+  }
+  .login-button{
+    float: right;
+  }
+}

@@ -17,13 +17,8 @@ class MenuTop extends React.Component {
                         </Link>
                     </Menu.Item>
                     <Menu.Item className="menu-small-item">
-                        <Link to={""}>
+                        <Link to={routes.topPrice}>
                             <DollarCircleOutlined style={{fontSize:'25px'}} /><b>| Price</b>
-                        </Link>
-                    </Menu.Item>
-                    <Menu.Item className="menu-small-item">
-                        <Link to={""}>
-                            <CheckSquareOutlined style={{fontSize:'25px'}}/><b>| Quality</b>
                         </Link>
                     </Menu.Item>
                 </Menu>

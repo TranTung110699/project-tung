@@ -6,6 +6,9 @@ import './menu.scss';
 import {Menu, message} from 'antd';
 import {AuditOutlined, BarChartOutlined, CarOutlined, ToolOutlined, ZoomInOutlined} from "@ant-design/icons";
 import SubMenu from "antd/es/menu/SubMenu";
+import Request from "../../common/network/http/Request";
+import apiUrls from "../../constants/api";
+import routes from "../../constants/routes";
 // import vinfastlogo from "./image/vinfastlogo.png";
 // import huyndailogo from "./image/huyndailogo.png";
 // import fordlogo from "./image/fordlogo.png";
@@ -23,11 +26,22 @@ export default function MenuAssessment (props) {
         getBrand()
     })
 
-    const url = 'https://5f20bd99daa42f0016664f8b.mockapi.io/api/carbrands';
+    //const url = 'https://5f20bd99daa42f0016664f8b.mockapi.io/api/carbrands';
     const getBrand = () => {
-        axios.get(url)
-            .then(res => {
-                setBrands(res.data);
+        // axios.get(url)
+        //     .then(res => {
+        //         setBrands(res.data);
+        //     })
+        //     .catch(error => console.log(error));
+        return Request.get(
+            apiUrls.getBranch,
+            {},
+            '',
+            '',
+            '',
+        )
+            .then((data) => {
+                setBrands(data);
             })
             .catch(error => console.log(error));
     }
@@ -37,7 +51,7 @@ export default function MenuAssessment (props) {
             <div>
                 <Menu className="menu-small-cover">
                     <Menu.Item className="menu-small-item">
-                        <Link to={""}>
+                        <Link to={routes.generalAssess}>
                             <BarChartOutlined style={{fontSize:'25px'}}/><b>| General Assessment</b>
                         </Link>
                     </Menu.Item>

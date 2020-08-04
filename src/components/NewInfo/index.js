@@ -32,7 +32,7 @@ class NewInfo extends Component {
             loading: true,
         });
         return Request.get(
-            apiUrls.getNewinfo + `?page=${index}&limit=${size}`,
+            apiUrls.getNewInfo + `?page=${index}&limit=${size}`,
             {},
             'Loading',
             'Success',

@@ -4,6 +4,8 @@ import './sideright.scss';
 import {Carousel, Menu} from 'antd';
 import axios from "axios";
 import {Link} from "react-router-dom";
+import Request from "../../common/network/http/Request";
+import apiUrls from "../../constants/api";
 
 export default function SideRight (props){
     const[carmarkets, setCarmarkets] = useState([]);
@@ -12,11 +14,22 @@ export default function SideRight (props){
         getCarmarket()
     })
 
-    const url = 'https://5f20bd99daa42f0016664f8b.mockapi.io/api/car-side-news';
+    //const url = 'https://5f20bd99daa42f0016664f8b.mockapi.io/api/car-side-news';
     const getCarmarket = () => {
-        axios.get(url)
-            .then(res => {
-                setCarmarkets(res.data);
+        // axios.get(url)
+        //     .then(res => {
+        //         setCarmarkets(res.data);
+        //     })
+        //     .catch(error => console.log(error));
+        return Request.get(
+            apiUrls.getCarNews,
+            {},
+            '',
+            '',
+            '',
+        )
+            .then((data) => {
+                setCarmarkets(data);
             })
             .catch(error => console.log(error));
     }

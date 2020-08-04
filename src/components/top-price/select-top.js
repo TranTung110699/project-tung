@@ -83,7 +83,7 @@ class SelectTop extends React.Component {
                 >
                     {kinds.map(({ name, value }) => (
                         <Option value={value} key={value}>
-                            <b>{name}</b>
+                            <div style={{color:'darkcyan'}}>{name}</div>
                         </Option>
                     ))}
                 </Select>

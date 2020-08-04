@@ -37,32 +37,32 @@ class TopPrice extends React.Component {
     //
     // }
 
-    getData = () => {
-    const {currentKind} =this.props;
-        this.setState({
-            loading: true,
-        });
-        return Request.get(
-            apiUrls.getTop + `?kind=${currentKind}`,
-            {},
-            'Loading',
-            'Success',
-            'Error',
-        )
-            .then((data) => {
-                this.setState({
-                    data: data,
-                    loading: false,
-                });
-            })
-            .catch(() => {
-                this.setState({loading: false});
-            })
-            .finally(() => this.setState({loading: false}));
-    };
+    // getData = () => {
+    // const {currentKind} =this.props;
+    //     this.setState({
+    //         loading: true,
+    //     });
+    //     return Request.get(
+    //         apiUrls.getTop + `?kind=${currentKind}`,
+    //         {},
+    //         'Loading',
+    //         'Success',
+    //         'Error',
+    //     )
+    //         .then((data) => {
+    //             this.setState({
+    //                 data: data,
+    //                 loading: false,
+    //             });
+    //         })
+    //         .catch(() => {
+    //             this.setState({loading: false});
+    //         })
+    //         .finally(() => this.setState({loading: false}));
+    // };
 
     render() {
-        const {data, loading, currentKind} = this.state;
+        //const {data, loading, currentKind} = this.state;
         return (
             <div className="best-sell-page">
                 <SelectTop/>

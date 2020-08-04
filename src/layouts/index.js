@@ -8,7 +8,6 @@ import routes from '../constants/routes';
 import isEmpty from 'lodash/isEmpty';
 import Head from "./Header";
 import Footer from "./Footer/Footer";
-import SideRight from "./side-right";
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
@@ -23,7 +22,7 @@ class LayoutAll extends React.Component {
                 </Header>
                 <Layout>
                     <Sider width={300} className="side-left">
-                        {renderRoutes(route.routesside)}
+                        {renderRoutes(route.routesSideLeft)}
                     </Sider>
                     <Layout>
                         <Content
@@ -36,7 +35,7 @@ class LayoutAll extends React.Component {
                         </Content>
                     </Layout>
                     <Sider width={300} className="side-right">
-                        <SideRight/>
+                        {renderRoutes(route.routesSideRight)}
                     </Sider>
                 </Layout>
                 <Footer/>

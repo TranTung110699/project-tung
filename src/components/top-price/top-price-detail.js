@@ -28,12 +28,12 @@ const TopPriceDetail = () => {
 
     console.log(topPrices);
     return (
-        <div style={{height: '100%', backgroundColor: 'white', marginTop: '20px',marginLeft:'-300px'}}>
+        <div style={{height: '100%', backgroundColor: 'white', margin: '20px -300px'}}>
             <div>{cid}</div>
             <div>
                 {topPrices.map(topPrice =>
                     <div>
-                        <b style={{color: 'black', fontFamily: 'Google Sans', fontSize: '25px', paddingLeft:'20px'}}>{topPrice.name}</b>
+                        <b style={{color: 'black', fontFamily: 'Google Sans', fontSize: '25px', padding:'20px 50px'}}>{topPrice.name}</b>
                         <div style={{padding:'15px'}} dangerouslySetInnerHTML={{
                             __html: topPrice.content,
                         }}/>

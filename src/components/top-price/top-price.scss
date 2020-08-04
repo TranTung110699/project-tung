@@ -1,21 +1,22 @@
 .best-sell-page{
   height: 100%;
-  margin-top: 20px;
-  margin-left: -300px;
+  margin: 20px -300px;
   .best-sell-title{
     color: darkcyan;
     font-family: Google Sans;
     font-size: 25px;
-
+    margin-bottom: 30px;
   }
   .best-sell-content{
     background-color: white;
     padding: 20px 15px;
     .short-content{
       font-family: Google Sans;
+      padding: 20px 50px;
+      font-size: 18px;
     }
     .div-table{
-      padding-top: 20px;
+      padding: 20px 50px;
       Table{
         border: 2px solid darkcyan;
         .ant-table-thead{

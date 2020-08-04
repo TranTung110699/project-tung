@@ -3,7 +3,8 @@ import NewInfo from '../components/NewInfo';
 
 import routes from '../constants/routes';
 import Testroute from "../layouts/testroute";
-import routesside from "../constants/routesside";
+import routesSideLeft from "../constants/routes-side-left";
+import routesSideRight from "../constants/routes-side-right";
 import Testroutes from "../layouts/testroutes";
 import NewSideLeft from "../components/NewInfo/new-side-left";
 import NewDetail from "../components/NewInfo/new-detail";
@@ -11,6 +12,8 @@ import BestSeller from "../components/best-seller";
 import BestSellerDetail from "../components/best-seller/best-seller-detail";
 import TopPrice from "../components/top-price";
 import TopPriceDetail from "../components/top-price/top-price-detail";
+import GeneralAssess from "../components/general-assess";
+import SideRight from "../components/NewInfo/new-side-right";
 
 export default [
   {
@@ -43,27 +46,32 @@ export default [
       },
       {
         path: routes.generalAssess,
-        component: TopPrice,
+        component: GeneralAssess,
       },
     ],
-    routesside: [
+    routesSideLeft: [
       {
         path: '/',
         component: NewSideLeft,
         exact: true,
       },
       {
-        path: `${routesside.getNewDetail}:niid`,
+        path: `${routesSideLeft.getNewDetail}:niid`,
         component: NewSideLeft,
       },
-      // {
-      //   path: routesside.bestSeller,
-      //   component: Testroutes,
-      // },
-      // {
-      //   path: `${routes.bestSeller}:cid`,
-      //   component: Testroutes,
-      // },
+
+    ],
+    routesSideRight: [
+      {
+        path: '/',
+        component: SideRight,
+        exact: true,
+      },
+      {
+        path: `${routesSideRight.getNewDetail}:niid`,
+        component: SideRight,
+      },
+
     ],
   },
 ];

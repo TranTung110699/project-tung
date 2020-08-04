@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import 'antd/dist/antd.css';
-import './sideright.scss';
-import {Carousel, Menu} from 'antd';
-import axios from "axios";
-import {Link} from "react-router-dom";
+import './style.scss';
 import Request from "../../common/network/http/Request";
 import apiUrls from "../../constants/api";
 

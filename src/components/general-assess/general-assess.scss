@@ -5,6 +5,7 @@
     color: darkcyan;
     font-family: Google Sans;
     font-size: 25px;
+    margin-bottom: 30px;
   }
   .best-sell-content{
     background-color: white;
@@ -14,18 +15,11 @@
       padding: 20px 50px;
       font-size: 18px;
     }
-    .div-table{
-      padding: 20px 50px;
-      Table{
-        border: 2px solid darkcyan;
-        .ant-table-thead{
-          .ant-table-cell{
-            background-color: lightblue;
-          }
-        }
-        .ant-table-cell{
-          border: 0.1px solid lightgray;
-        }
+    .div-chart{
+      padding: 20px;
+      div{
+        height: 600px;
+        width: 1000px;
       }
     }
   }

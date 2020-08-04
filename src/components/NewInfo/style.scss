@@ -44,3 +44,33 @@
     color: black !important;
   }
 }
+
+.title-right{
+  font-size: 20px;
+  color: darkcyan;
+  font-family: Google Sans;
+}
+
+//Side-Right
+.card-market{
+  padding: 15px 15px;
+  border-bottom: 1px dotted darkcyan;
+  a{
+    color: black;
+    font-family: Google Sans;
+    .marketcar-image{
+      width: 100px;
+      height: 80px;
+    }
+    .marketcar-title{
+      height: 80px;
+      padding-top: 15px;
+      padding-left: 10px;
+      font-size: 15px;
+    }
+  }
+  a:hover{
+    text-decoration: none;
+    color: darkcyan;
+  }
+}

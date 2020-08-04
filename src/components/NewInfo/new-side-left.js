@@ -19,7 +19,7 @@ class NewSideLeft extends React.Component{
                 </div>
                 <div>
                     <a target="_blank" href="https://www.toyota.com.vn/">
-                        <img className="car-advertisement" src= { require('./images/toyota.jpg') } alt={''}/>
+                        <img className="car-advertisement" src= { require('./images/toyotaposter.jpg') } alt={''}/>
                     </a>
                 </div>
                 <div>

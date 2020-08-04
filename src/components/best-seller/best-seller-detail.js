@@ -28,13 +28,13 @@ const BestSellerDetail = () => {
 
     console.log(bestSells);
     return (
-        <div style={{height: '100%', backgroundColor: 'white', marginTop: '20px',marginLeft:'-300px'}}>
+        <div style={{height: '100%', backgroundColor: 'white', margin: '20px -300px'}}>
             <div>{cid}</div>
             <div>
                 {bestSells.map(bestSell =>
                     <div>
-                        <b style={{color: 'black', fontFamily: 'Google Sans', fontSize: '25px', paddingLeft:'20px'}}>{bestSell.name}</b>
-                        <div style={{padding:'15px'}} dangerouslySetInnerHTML={{
+                        <b style={{color: 'black', fontFamily: 'Google Sans', fontSize: '25px', padding:'20px 50px'}}>{bestSell.name}</b>
+                        <div style={{padding:'15px 50px'}} dangerouslySetInnerHTML={{
                             __html: bestSell.content,
                         }}/>
                     </div>

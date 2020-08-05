@@ -7,7 +7,7 @@ const initialState = {
     currentKind: 'topexpen',
 };
 
-export default function statisticReducer(state = initialState, action) {
+export default function topReducer(state = initialState, action) {
     switch (action.type) {
         case SELECT_KIND:
             return Object.assign({}, state, {

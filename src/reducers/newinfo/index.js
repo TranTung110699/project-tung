@@ -8,7 +8,7 @@ const initialState = {
     idNewInfo:'',
 };
 
-export default function searchContestReducer(state = initialState, action) {
+export default function newInfoReducer(state = initialState, action) {
     switch (action.type) {
         case TOTAL_NEWINFO:
             return Object.assign({}, state, {

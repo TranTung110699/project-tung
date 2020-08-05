@@ -9,15 +9,6 @@ import SubMenu from "antd/es/menu/SubMenu";
 import Request from "../../common/network/http/Request";
 import apiUrls from "../../constants/api";
 import routes from "../../constants/routes";
-// import vinfastlogo from "./image/vinfastlogo.png";
-// import huyndailogo from "./image/huyndailogo.png";
-// import fordlogo from "./image/fordlogo.png";
-// import toyotalogo from "./image/toyotalogo.png";
-// import mitsubishilogo from "./image/mitsubishilogo.png";
-// import mazdalogo from "./image/mazdalogo.png";
-// import hondalogo from "./image/hondalogo.png";
-// import kialogo from "./image/kialogo.png";
-
 export default function MenuAssessment (props) {
 
     const[brands, setBrands] = useState([]);
@@ -55,38 +46,11 @@ export default function MenuAssessment (props) {
                             <BarChartOutlined style={{fontSize:'25px'}}/><b>| General Assessment</b>
                         </Link>
                     </Menu.Item>
-                    <SubMenu className="sub-menu" icon={<ZoomInOutlined style={{fontSize:'25px'}}/>} title={<b>| Brand Assessment</b>}>
-                        {brands.map(brand =>
-                            <Menu.Item className="sub-menu-item" >
-                                <Link to={""}><img className="logo-brand" src= { require('./image/' + brand.image +'.png') } alt={''}/> | <b>{brand.name}</b></Link>
-                            </Menu.Item>
-                        )}
-                        {/*<Menu.Item className="sub-menu-item" >*/}
-                        {/*    <Link to={""}><img className="logo-brand" src= {vinfastlogo} alt={''}/>| <b>VinFast</b></Link>*/}
-                        {/*</Menu.Item>*/}
-                        {/*<Menu.Item className="sub-menu-item" >*/}
-                        {/*    <Link to={""}><img className="logo-brand" src= {huyndailogo} alt={''}/>| <b>Huyndai</b></Link>*/}
-                        {/*</Menu.Item>*/}
-                        {/*<Menu.Item className="sub-menu-item" >*/}
-                        {/*    <Link to={""}><img className="logo-brand" src= {fordlogo} alt={''}/>| <b>Ford</b></Link>*/}
-                        {/*</Menu.Item>*/}
-                        {/*<Menu.Item className="sub-menu-item" >*/}
-                        {/*    <Link to={""}><img className="logo-brand" src= {toyotalogo} alt={''}/>| <b>Toyota</b></Link>*/}
-                        {/*</Menu.Item>*/}
-                        {/*<Menu.Item className="sub-menu-item" >*/}
-                        {/*    <Link to={""}><img className="logo-brand" src= {mitsubishilogo} alt={''}/>| <b>Mitsubishi</b></Link>*/}
-                        {/*</Menu.Item>*/}
-                        {/*<Menu.Item className="sub-menu-item" >*/}
-                        {/*    <Link to={""}><img className="logo-brand" src= {mazdalogo} alt={''}/>| <b>Mazda</b></Link>*/}
-                        {/*</Menu.Item>*/}
-                        {/*<Menu.Item className="sub-menu-item" >*/}
-                        {/*    <Link to={""}><img className="logo-brand" src= {hondalogo} alt={''}/>| <b>Honda</b></Link>*/}
-                        {/*</Menu.Item>*/}
-                        {/*<Menu.Item className="sub-menu-item" >*/}
-                        {/*    <Link to={""}><img className="logo-brand" src= {kialogo} alt={''}/>| <b>Kia</b></Link>*/}
-                        {/*</Menu.Item>*/}
-
-                    </SubMenu>
+                    <Menu.Item className="menu-small-item">
+                        <Link to={routes.brandAssess}>
+                            <ZoomInOutlined style={{fontSize:'25px'}}/><b>| Brand Assessment</b>
+                        </Link>
+                    </Menu.Item>
 
                 </Menu>
             </div>

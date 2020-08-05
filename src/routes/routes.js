@@ -14,6 +14,7 @@ import TopPrice from "../components/top-price";
 import TopPriceDetail from "../components/top-price/top-price-detail";
 import GeneralAssess from "../components/general-assess";
 import SideRight from "../components/NewInfo/new-side-right";
+import BrandAssess from "../components/brand-assess";
 
 export default [
   {
@@ -47,6 +48,14 @@ export default [
       {
         path: routes.generalAssess,
         component: GeneralAssess,
+      },
+      {
+        path: routes.brandAssess,
+        component: BrandAssess,
+      },
+      {
+        path: routes.getComparison,
+        component: BrandAssess,
       },
     ],
     routesSideLeft: [

@@ -41,13 +41,11 @@ class Head extends React.Component{
                         </Dropdown>
                     </Menu.Item>
                     <Menu.Item key="4">
-                        <Link to={routes.newinfo}>
-                            <Dropdown placement={"bottomCenter"} overlay={<MenuAssessment/>}>
-                                <a>
-                                    <b>Assessment</b>
-                                </a>
-                            </Dropdown>
-                        </Link>
+                        <Dropdown placement={"bottomCenter"} overlay={<MenuAssessment/>}>
+                            <a>
+                                <b>Assessment</b>
+                            </a>
+                        </Dropdown>
                     </Menu.Item>
                     <Menu.Item key="5">
                         <Link to={routes.newinfo}>

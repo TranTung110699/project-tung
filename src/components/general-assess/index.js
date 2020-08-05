@@ -20,10 +20,10 @@ class GeneralAssess extends React.Component {
         this.props.dispatch(selectMonth('april'));
     }
 
-    handleClick = (month) => {
-        this.props.dispatch(selectMonth(month));
-        this.getData();
-    };
+    // handleClick = (month) => {
+    //     this.props.dispatch(selectMonth(month));
+    //     this.getData();
+    // };
 
     // componentDidMount = () => {
     //     this.getData();
@@ -62,6 +62,6 @@ class GeneralAssess extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    currentKind: state.top.currentKind,
+    currentMonth: state.top.currentMonth,
 });
 export default connect(mapStateToProps)(GeneralAssess);

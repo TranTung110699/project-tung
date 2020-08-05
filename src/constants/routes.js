@@ -4,4 +4,6 @@ export default {
   bestSeller: '/best-seller',
   topPrice: '/top-price',
   generalAssess: '/general-assess',
+  brandAssess: '/brand-assess',
+  getComparison: '/comparison',
 };

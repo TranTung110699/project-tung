@@ -84,7 +84,7 @@ class ColumnChart extends React.Component {
                 enabled: false
             },
             tooltip: {
-                pointFormat: 'Doanh số bán ra: <b>{point.y:.0f} chiếc</b>'
+                pointFormat: 'Doanh số bán ra: <b>{point.y:.f} chiếc</b>'
             },
             series: [{
                 name: 'Doanh số',

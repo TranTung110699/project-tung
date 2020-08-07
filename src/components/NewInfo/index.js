@@ -58,7 +58,7 @@ class NewInfo extends Component {
         return (
             <div style={{height: '100%'}}>
                 <div align="center" style={{color: 'darkcyan', fontFamily: 'Google Sans', fontSize: '25px'}}>
-                    <b>New Information</b>
+                    <b>Thông tin mới về thị trường xe</b>
                 </div>
                 <div align="center" style={{height: '100%', padding: '20px 20px', backgroundColor: '#fff'}}>
                     <Row

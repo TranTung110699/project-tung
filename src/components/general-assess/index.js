@@ -20,20 +20,6 @@ class GeneralAssess extends React.Component {
         this.props.dispatch(selectMonth('april'));
     }
 
-    // handleClick = (month) => {
-    //     this.props.dispatch(selectMonth(month));
-    //     this.getData();
-    // };
-
-    // componentDidMount = () => {
-    //     this.getData();
-    // };
-
-    // componentDidUpdate(prevProps, prevState, snapshot) {
-    //     const { currently } = this.props;
-    //
-    // }
-
     render() {
         const {data, loading, currentKind} = this.state;
         return (

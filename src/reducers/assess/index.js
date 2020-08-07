@@ -2,7 +2,6 @@ import {
     SELECT_MONTH,
     SELECT_BRAND
 } from '../../actions/assess';
-import moment from 'moment';
 
 const initialState = {
     currentMonth: 'april',

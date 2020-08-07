@@ -15,6 +15,9 @@ import TopPriceDetail from "../components/top-price/top-price-detail";
 import GeneralAssess from "../components/general-assess";
 import SideRight from "../components/NewInfo/new-side-right";
 import BrandAssess from "../components/brand-assess";
+import CompareLeft from "../components/comparison/compare-left";
+import CompareRight from "../components/comparison/compare-right";
+import Comparison from "../components/comparison";
 
 export default [
   {
@@ -55,7 +58,7 @@ export default [
       },
       {
         path: routes.getComparison,
-        component: BrandAssess,
+        component: Comparison,
       },
     ],
     routesSideLeft: [
@@ -67,6 +70,10 @@ export default [
       {
         path: `${routesSideLeft.getNewDetail}:niid`,
         component: NewSideLeft,
+      },
+      {
+        path: routes.getComparison,
+        component: CompareLeft,
       },
 
     ],
@@ -80,7 +87,10 @@ export default [
         path: `${routesSideRight.getNewDetail}:niid`,
         component: SideRight,
       },
-
+      {
+        path: routes.getComparison,
+        component: CompareRight,
+      },
     ],
   },
 ];

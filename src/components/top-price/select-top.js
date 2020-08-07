@@ -20,50 +20,11 @@ class SelectTop extends React.Component {
         // this.props.dispatch(selectKind('topexpen'));
     }
 
-    // componentDidMount() {
-    //     this.getData();
-    // }
-
-    // componentDidUpdate(prevProps, prevState, snapshot) {
-    //     const { currentKind } = this.props;
-    //     if (prevProps.currentKind !== currentKind) {
-    //         this.getData();
-    //     }
-    // }
 
     componentWillUnmount() {
         this.props.dispatch(selectKind(kinds));
     }
 
-    // getData = () => {
-    //     this.setState({ loading: true });
-    //     const {currentKind} =this.props;
-    //     return Request.get(
-    //         apiUrls.getTop+`?kind=${currentKind}`,
-    //         {
-    //         },
-    //         '',
-    //         'Success',
-    //         'Error',
-    //     )
-    //         .then((data) => {
-    //             this.setState({
-    //                 data:data,
-    //                 currentKind: currentKind,
-    //                 loading: false,
-    //             });
-    //         })
-    //         .catch(() => {
-    //             this.setState({
-    //                 loading: false,
-    //             });
-    //         })
-    //         .finally(() => {
-    //             this.setState({
-    //                 loading: false,
-    //             });
-    //         });
-    // };
 
     handleClick = (kind) => {
         this.props.dispatch(selectKind(kind));

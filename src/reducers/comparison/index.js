@@ -6,7 +6,8 @@ import {
 } from "../../actions/comparison";
 
 const initialState = {
-
+    brand_left:'VinFast',
+    brand_right:'VinFast',
 };
 
 export default function comparisonReducer(state = initialState, action) {

@@ -1,0 +1,32 @@
+.comparison-page{
+  padding:10px 20px;
+  background-color: white;
+}
+
+.select-container{
+  .select-bar{
+    .select-title{
+      .title-search{
+        .image-search{
+          height: 40px !important;
+          width: 60px !important;
+        }
+      }
+    }
+  }
+}
+.div-table-car{
+  padding-top: 20px;
+  Table{
+    border: 2px solid darkcyan;
+    .ant-table-thead{
+      .ant-table-cell{
+        background-color: lightblue;
+
+      }
+    }
+    .ant-table-cell{
+      border: 0.1px solid lightgray;
+    }
+  }
+}

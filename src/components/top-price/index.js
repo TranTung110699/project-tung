@@ -28,38 +28,6 @@ class TopPrice extends React.Component {
         this.getData();
     };
 
-    // componentDidMount = () => {
-    //     this.getData();
-    // };
-
-    // componentDidUpdate(prevProps, prevState, snapshot) {
-    //     const { currently } = this.props;
-    //
-    // }
-
-    // getData = () => {
-    // const {currentKind} =this.props;
-    //     this.setState({
-    //         loading: true,
-    //     });
-    //     return Request.get(
-    //         apiUrls.getTop + `?kind=${currentKind}`,
-    //         {},
-    //         'Loading',
-    //         'Success',
-    //         'Error',
-    //     )
-    //         .then((data) => {
-    //             this.setState({
-    //                 data: data,
-    //                 loading: false,
-    //             });
-    //         })
-    //         .catch(() => {
-    //             this.setState({loading: false});
-    //         })
-    //         .finally(() => this.setState({loading: false}));
-    // };
 
     render() {
         //const {data, loading, currentKind} = this.state;

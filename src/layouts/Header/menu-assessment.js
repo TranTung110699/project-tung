@@ -17,13 +17,7 @@ export default function MenuAssessment (props) {
         getBrand()
     })
 
-    //const url = 'https://5f20bd99daa42f0016664f8b.mockapi.io/api/carbrands';
     const getBrand = () => {
-        // axios.get(url)
-        //     .then(res => {
-        //         setBrands(res.data);
-        //     })
-        //     .catch(error => console.log(error));
         return Request.get(
             apiUrls.getBranch,
             {},
@@ -57,5 +51,3 @@ export default function MenuAssessment (props) {
         </div>
     );
 }
-
-// export default MenuAssessment;

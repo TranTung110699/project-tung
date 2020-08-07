@@ -59,7 +59,7 @@ class ColumnChart extends React.Component {
                 type: 'column',
             },
             title: {
-                text: '<b style="color: darkcyan;font-size: 20px;text-transform: uppercase">'+ (currentMonth != "april" ? 'Tháng 3':'Tháng 4')+'</b>',
+                text: '<b style="color: darkcyan;font-size: 20px;text-transform: uppercase">'+currentMonth+'</b>',
             },
             subtitle: {
                 text: 'Doanh số bán ra của 8 hãng xe phổ biến tại Việt Nam(Source: <a href="https://news.oto-hui.com/thong-ke-doanh-so-cac-hang-o-to-tai-viet-nam-trong-thang-42020-sau-thoi-gian-cach-ly-covid-19/">OTO-HUI</a>)'

@@ -11,13 +11,7 @@ export default function SideRight (props){
         getCarmarket()
     })
 
-    //const url = 'https://5f20bd99daa42f0016664f8b.mockapi.io/api/car-side-news';
     const getCarmarket = () => {
-        // axios.get(url)
-        //     .then(res => {
-        //         setCarmarkets(res.data);
-        //     })
-        //     .catch(error => console.log(error));
         return Request.get(
             apiUrls.getCarNews,
             {},

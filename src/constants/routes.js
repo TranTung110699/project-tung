@@ -6,4 +6,5 @@ export default {
   generalAssess: '/general-assess',
   brandAssess: '/brand-assess',
   getComparison: '/comparison',
+  buyCar: '/buy-car',
 };

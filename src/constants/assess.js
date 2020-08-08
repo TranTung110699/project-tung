@@ -9,6 +9,17 @@ export const months = [
     },
 ];
 
+export const status = [
+    {
+        name: 'Mới',
+        value: 'new',
+    },
+    {
+        name: 'Cũ',
+        value: 'old',
+    },
+];
+
 export const brands = [
     {
         name: 'vinfast',

@@ -37,12 +37,12 @@ export default function MenuAssessment (props) {
                 <Menu className="menu-small-cover">
                     <Menu.Item className="menu-small-item">
                         <Link to={routes.generalAssess}>
-                            <BarChartOutlined style={{fontSize:'25px'}}/><b>| General Assessment</b>
+                            <BarChartOutlined style={{fontSize:'25px'}}/><b>| Đánh giá doanh số chung</b>
                         </Link>
                     </Menu.Item>
                     <Menu.Item className="menu-small-item">
                         <Link to={routes.brandAssess}>
-                            <ZoomInOutlined style={{fontSize:'25px'}}/><b>| Brand Assessment</b>
+                            <ZoomInOutlined style={{fontSize:'25px'}}/><b>| Doanh số theo từng hãng</b>
                         </Link>
                     </Menu.Item>
 

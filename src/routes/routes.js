@@ -18,6 +18,7 @@ import BrandAssess from "../components/brand-assess";
 import CompareLeft from "../components/comparison/compare-left";
 import CompareRight from "../components/comparison/compare-right";
 import Comparison from "../components/comparison";
+import BuyCar from "../components/buy-car";
 
 export default [
   {
@@ -59,6 +60,10 @@ export default [
       {
         path: routes.getComparison,
         component: Comparison,
+      },
+      {
+        path: routes.buyCar,
+        component: BuyCar,
       },
     ],
     routesSideLeft: [

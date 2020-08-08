@@ -13,12 +13,12 @@ class MenuTop extends React.Component {
                 <Menu className="menu-small-cover">
                     <Menu.Item className="menu-small-item">
                         <Link to={routes.bestSeller}>
-                            <FireOutlined style={{fontSize:'25px'}}/><b>| Best Seller</b>
+                            <FireOutlined style={{fontSize:'25px'}}/><b>| Bán chạy nhất</b>
                         </Link>
                     </Menu.Item>
                     <Menu.Item className="menu-small-item">
                         <Link to={routes.topPrice}>
-                            <DollarCircleOutlined style={{fontSize:'25px'}} /><b>| Price</b>
+                            <DollarCircleOutlined style={{fontSize:'25px'}} /><b>| Về giá</b>
                         </Link>
                     </Menu.Item>
                 </Menu>

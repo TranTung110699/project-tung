@@ -22,7 +22,7 @@ class Head extends React.Component{
                 <Menu className="menu-header" mode="horizontal">
                     <Menu.Item key="1">
                         <Link to={routes.newinfo}>
-                            <b>New Information</b>
+                            <b>Trang chủ</b>
                         </Link>
                     </Menu.Item>
                     <Menu.Item key="2">
@@ -35,13 +35,13 @@ class Head extends React.Component{
                     <Menu.Item key="3">
                         <Dropdown placement={"bottomCenter"} overlay={<MenuAssessment/>}>
                             <a>
-                                <b>Assessment</b>
+                                <b>Đánh giá doanh số</b>
                             </a>
                         </Dropdown>
                     </Menu.Item>
                     <Menu.Item key="4">
                         <Link to={routes.getComparison}>
-                            <b className="title-menu">Comparison</b>
+                            <b className="title-menu">So sánh</b>
                         </Link>
                     </Menu.Item>
                     <Menu.Item key="5">
@@ -50,8 +50,8 @@ class Head extends React.Component{
                         </Link>
                     </Menu.Item>
                     <Menu.Item key="6">
-                        <Link to={routes.newinfo}>
-                            <b className="title-menu" style={{color:'orangered'}}>BUY CAR</b>
+                        <Link to={routes.buyCar}>
+                            <b className="title-menu" style={{color:'orangered'}}>Mua Xe</b>
                         </Link>
                     </Menu.Item>
                     <div className="login-button">

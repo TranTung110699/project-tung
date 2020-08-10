@@ -31,7 +31,7 @@ class LineChart extends React.Component {
         this.setState({
             loading: true,
         });
-        const {currentBrand} =this.props;
+        const {currentBrand} = this.props;
         return Request.get(
             apiUrls.getBrandAssess+`?brand=${currentBrand}`,
             {},

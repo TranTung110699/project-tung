@@ -32,7 +32,7 @@ const columns = [
         key: 'price',
     },
     {
-        title: 'Doanh so',
+        title: 'Doanh soo',
         dataIndex: 'number',
         key: 'number',
     },
